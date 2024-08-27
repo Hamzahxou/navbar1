@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar V1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>Nav<span>Xou</span></h1>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="list-menu" id="list-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <h1>Hello World</h1>
+      <!-- <div class="card">
+        <div class="card-header">
+          <div class="icon">
+            <span style="--bg: crimson"></span>
+            <span style="--bg: yellow"></span>
+            <span style="--bg: green"></span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Koding itu mudah</p>
+        </div>
+      </div> -->
+    </main>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const listMenu = document.getElementById("list-menu");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        listMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
